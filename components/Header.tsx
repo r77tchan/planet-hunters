@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import PlayNowButton from "@/components/PlayNowButton";
 
 export default function Header() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -38,8 +39,8 @@ export default function Header() {
           <li className="text-[13px] font-medium tracking-widest md:text-[16px]">
             TRAILER
           </li>
-          <li className="bg-blue-1 hidden w-41 cursor-not-allowed py-3.75 text-center text-[15px] font-bold tracking-wider text-black hover:shadow-[0_0_18px_5px_rgba(0,255,174,0.6)] md:block">
-            PLAY NOW
+          <li className="hidden md:block">
+            <PlayNowButton isSmall={true} />
           </li>
         </ul>
         <audio
