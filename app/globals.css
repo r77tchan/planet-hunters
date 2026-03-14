@@ -27,3 +27,36 @@ body {
   line-height: 1;
   letter-spacing: 0.05em;
 }
+
+@keyframes circlemove {
+  0% {
+    bottom: 35px;
+  }
+  100% {
+    bottom: -15px;
+  }
+}
+
+@keyframes circlemovehide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes newsMessage-animation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
