@@ -1,11 +1,18 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type MouseEvent } from "react";
 import PlayNowButton from "@/components/PlayNowButton";
 
 export default function Header() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+
+  const scrollToSection = (id: string) => (e: MouseEvent<HTMLLIElement>) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    e.preventDefault();
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const toggleSound = async () => {
     const audio = audioRef.current;
@@ -33,7 +40,10 @@ export default function Header() {
       <img className="w-30 md:w-auto" src="logo.svg" alt="Necopon games" />
       <nav className="relative">
         <ul className="flex items-center gap-5 md:gap-7.5">
-          <li className="text-[13px] font-medium tracking-widest md:text-[16px]">
+          <li
+            className="cursor-pointer text-[13px] font-medium tracking-widest hover:shadow-[0_0_18px_5px_rgba(0,255,174,0.6)] md:text-[16px]"
+            onClick={scrollToSection("story")}
+          >
             STORY
           </li>
           <li className="text-[13px] font-medium tracking-widest md:text-[16px]">
