@@ -46,7 +46,10 @@ export default function Header() {
           >
             STORY
           </li>
-          <li className="text-[13px] font-medium tracking-widest md:text-[16px]">
+          <li
+            className="cursor-pointer text-[13px] font-medium tracking-widest hover:shadow-[0_0_18px_5px_rgba(0,255,174,0.6)] md:text-[16px]"
+            onClick={scrollToSection("trailer")}
+          >
             TRAILER
           </li>
           <li className="hidden md:block">

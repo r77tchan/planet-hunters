@@ -2,7 +2,7 @@ import { assetPath } from "@/lib/utils/assetPath";
 
 export default function Trailer() {
   return (
-    <div className="bg-blue-1 relative py-12.5 md:py-27.5">
+    <div id="trailer" className="bg-blue-1 relative py-12.5 md:py-27.5">
       <div className="mx-auto max-w-292.5 px-5 md:px-7.5">
         <h2 className="relative mb-11.25 text-[50px] font-bold tracking-wider md:mb-17.5 md:text-[80px]">
           TRAILER
