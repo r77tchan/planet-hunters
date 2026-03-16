@@ -4,7 +4,7 @@ export default function Trailer() {
   return (
     <div id="trailer" className="bg-blue-1 relative py-12.5 md:py-27.5">
       <div className="mx-auto max-w-292.5 px-5 md:px-7.5">
-        <h2 className="relative mb-11.25 text-[50px] font-bold tracking-wider md:mb-17.5 md:text-[80px]">
+        <h2 className="relative mb-11.25 text-[50px] font-bold tracking-wider text-black md:mb-17.5 md:text-[80px]">
           TRAILER
           <span className="absolute -bottom-3.75 left-0 h-1.5 w-15 bg-black md:-bottom-7.5 md:h-2 md:w-20" />
         </h2>
