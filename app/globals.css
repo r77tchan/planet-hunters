@@ -20,8 +20,8 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: black;
+  color: white;
   font-family:
     var(--font-exo), var(--font-noto-sans-jp), Arial, Helvetica, sans-serif;
   line-height: 1;
@@ -58,5 +58,23 @@ body {
   }
   to {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes atom-spinner-animation-1 {
+  100% {
+    transform: rotateZ(120deg) rotateX(66deg) rotateZ(360deg);
+  }
+}
+
+@keyframes atom-spinner-animation-2 {
+  100% {
+    transform: rotateZ(240deg) rotateX(66deg) rotateZ(360deg);
+  }
+}
+
+@keyframes atom-spinner-animation-3 {
+  100% {
+    transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
   }
 }

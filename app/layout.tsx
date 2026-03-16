@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Exo, Noto_Sans_JP } from "next/font/google";
+import InitialLoader from "@/components/InitialLoader";
 import "./globals.css";
 
 const exo = Exo({
@@ -31,6 +32,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${exo.variable} ${notoSansJP.variable} antialiased`}>
+        <InitialLoader />
         {children}
       </body>
     </html>
