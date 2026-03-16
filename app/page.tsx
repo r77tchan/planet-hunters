@@ -4,6 +4,7 @@ import Visual from "@/components/Visual";
 import Story from "@/components/Story";
 import AreYouReady from "@/components/AreYouReady";
 import Trailer from "@/components/Trailer";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <AreYouReady />
       <Trailer />
       <AreYouReady />
+      <Footer />
     </div>
   );
 }
